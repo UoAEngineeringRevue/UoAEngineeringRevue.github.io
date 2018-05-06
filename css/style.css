@@ -1,12 +1,57 @@
 body {
-  background-color: black;
+  background-color: white;
   font-family: 'Merriweather', serif;
+  overflow-x: hidden; /* Hack to hide horizontal scroll bars */
 }
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Lato', sans-serif;
+}
+.title-section {
+  height: 100vh;
+  width: 100vw;
+  background-color: #F44336;
+}
+.center-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .title-text {
   color: white;
-  font-size: 50px;
   text-align: center;
+}
+.title-text-size {
+  font-size: 60px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.subtitle-text {
+  color: #F5F5F5;
+}
+.subtitle-text-size {
+  font-size: 25px;
+}
+@media only screen and (max-width: 550px) {
+  .title-text-size {
+    font-size: 35px;
+  }
+  .subtitle-text-size {
+    font-size: 20px;
+  }
+}
+.glyph-size {
+  height: 40px;
+  width: auto;
+  transition: all .2s ease-in-out;
+}
+.glyph-size:hover {
+  transform: scale(1.4);
+}
+.glyph-position {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
 }
