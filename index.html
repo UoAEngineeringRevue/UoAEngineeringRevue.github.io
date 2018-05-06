@@ -23,53 +23,10 @@
     <script type="text/javascript">
       google.charts.load('current', {'packages':['corechart']});
       google.charts.setOnLoadCallback(drawChart);
-<<<<<<< HEAD
-
-      function drawChart() {
-        Papa.parse("https://danwong.nz/fantasypl/data/gameweek_points.csv", {
-          download: true,
-          complete: function(results) {
-            results.data.splice(-1,1);
-            var data = new google.visualization.DataTable();
-            data.addRows(results.data.length)
-            for (var i = 0; i < results.data.length; i++) {
-              if (i == 0) {
-                for (var j = 0; j < 4; j++) {
-                  data.addColumn('number', results.data[i][j]);
-                }
-              } else {
-                for (var j = 0; j < 4; j++) {
-                  data.setCell(i, j, results.data[i][j]);
-                }
-              }
-            }
-
-            var options = {
-              title: 'Points Through the Season',
-              legend: { position: 'bottom' }
-            };
-
-            var chart = new google.visualization.LineChart(document.getElementById('graph-div'));
-
-            chart.draw(data, options);
-          }
-        });
-      }
-=======
->>>>>>> f70deed6762ff206ea803d8a4a2773914a004ce4
     </script>
   </head>
 
   <body>
-<<<<<<< HEAD
-    <main role="main" class="container">
-      <div class="starter-template">
-        <center>
-          <div id="graph-div" style="width: 1000px; height: 500px"></div>
-        </center>
-      </div>
-    </main><!-- /.container -->
-=======
     <div class="title">
         <h1>Fantasy Football</h1>
     </div>
@@ -101,7 +58,6 @@
 		<br>
       </center>
     </div>
->>>>>>> f70deed6762ff206ea803d8a4a2773914a004ce4
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
