@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="../../../../favicon.ico"> -->
+
+    <title>FantasyPL Stats</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/starter-template.css" rel="stylesheet">
+
+    <!-- Google Charts -->
+    <script type="text/javascript" src="js/papaparse.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="js/papaparse.min.js"></script>
+    <script type="text/javascript" src="js/chart.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+<<<<<<< HEAD
+
+      function drawChart() {
+        Papa.parse("https://danwong.nz/fantasypl/data/gameweek_points.csv", {
+          download: true,
+          complete: function(results) {
+            results.data.splice(-1,1);
+            var data = new google.visualization.DataTable();
+            data.addRows(results.data.length)
+            for (var i = 0; i < results.data.length; i++) {
+              if (i == 0) {
+                for (var j = 0; j < 4; j++) {
+                  data.addColumn('number', results.data[i][j]);
+                }
+              } else {
+                for (var j = 0; j < 4; j++) {
+                  data.setCell(i, j, results.data[i][j]);
+                }
+              }
+            }
+
+            var options = {
+              title: 'Points Through the Season',
+              legend: { position: 'bottom' }
+            };
+
+            var chart = new google.visualization.LineChart(document.getElementById('graph-div'));
+
+            chart.draw(data, options);
+          }
+        });
+      }
+=======
+>>>>>>> f70deed6762ff206ea803d8a4a2773914a004ce4
+    </script>
+  </head>
+
+  <body>
+<<<<<<< HEAD
+    <main role="main" class="container">
+      <div class="starter-template">
+        <center>
+          <div id="graph-div" style="width: 1000px; height: 500px"></div>
+        </center>
+      </div>
+    </main><!-- /.container -->
+=======
+    <div class="title">
+        <h1>Fantasy Football</h1>
+    </div>
+    <div class="container-fluid">
+      <center>
+        <div class="row">
+          <div class="col-md-12">
+            <div id="cumulative-graph-div" class="card" style="width: 80%; height: 500px"></div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+              <div id="points-gameweek-div" class="card" style="width: 80%; height:500px"></div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+              <div id="bench-points-gameweek-div" class="card" style="width: 80%; height:500px"></div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+              <div id="combined-points-gameweek-div" class="card" style="width: 80%; height:500px"></div>
+          </div>
+        </div>
+		<br>
+      </center>
+    </div>
+>>>>>>> f70deed6762ff206ea803d8a4a2773914a004ce4
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
+  
