@@ -5,13 +5,8 @@ body {
 h1, h2, h3, h4, h5 {
   font-family: 'Lato', sans-serif;
 }
-.center-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 .title-text {
   color: white;
-  font-size: 5rem;
+  font-size: 50px;
+  text-align: center;
 }
