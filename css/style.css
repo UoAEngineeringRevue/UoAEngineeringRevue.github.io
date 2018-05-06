@@ -32,14 +32,6 @@ h1, h2, h3, h4, h5, h6 {
 .subtitle-text-size {
   font-size: 25px;
 }
-@media only screen and (max-width: 550px) {
-  .title-text-size {
-    font-size: 35px;
-  }
-  .subtitle-text-size {
-    font-size: 20px;
-  }
-}
 .glyph-size {
   height: 40px;
   width: auto;
@@ -54,4 +46,27 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 40px;
   margin-bottom: 20px;
+}
+@media only screen and (max-width: 550px) {
+  .title-text-size {
+    font-size: 35px;
+  }
+  .subtitle-text-size {
+    font-size: 20px;
+  }
+  .glyph-size {
+    height: 30px;
+    width: auto;
+    transition: all .2s ease-in-out;
+  }
+  .glyph-size:hover {
+    transform: scale(1.3);
+  }
+  .glyph-position {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+  }
 }
