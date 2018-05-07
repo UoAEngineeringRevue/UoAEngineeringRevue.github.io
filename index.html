@@ -16,139 +16,146 @@
     <link href="css/style.css" rel="stylesheet">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700|Open+Sans:700" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
   <body>
-    <div class="title-section">
-      <div class="center-text">
-        <h1 class="title-text title-text-size">22 Symonds Street</h1>
-        <p class="subtitle-text subtitle-text-size">Engineering Revue 2018</p>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="index.html">Engineering Revue</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html#home">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li> -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Previous Revues</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="#">2017 - 21 Symonds Street</a>
+              <a class="dropdown-item" href="#">2016 - Avengineers</a>
+              <a class="dropdown-item" href="#">2015 - Hack to the Future</a>
+            </div>
+          </li>
+        </ul>
       </div>
-      <div class="glyph-position">
-          <center><img class="glyph-size" id="downarrow" src="img/downarrow.png"></center>
-      </div>
-    </div>
+    </nav>
 
     <div class="container-fluid">
-      <!-- About Section -->
-      <div class="row" id="about">
+      <div class="row" id="home">
         <div class="col-md-6 offset-md-3">
-          <div class="section about">
-              <center><h1>About Us</h1></center>
+          <div class="section top">
+            <h1 class="title-text">Engineering<br>Revue</h1>
+            <p class="subtitle-text">The University of Auckland</p>
+            <br><br><br>
+            <hr>
+          </div>
+        </div>
+      </div>
+
+      <!-- About Section -->
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <div class="section">
+              <h1>About Us</h1>
               <br>
               <p align="justify">The Engineering Revue is a badass show put on by the University of Auckland Faculty of Engineering at the SkyCity Theatre. 
                 One of the hugely anticipated events of the year, the Revue is a combination of acting, comedy, dancing, singing, talents and much more.
               </p>
               
-              <br><br>
-  
-              <img src="img/cast_photo.jpg" class="img-thumbnail" style="width: 100%; height: auto">
+              <img src="img/cast_photo.jpg" class="img-thumbnail images" style="width: 100%; height: auto">
+
+              <br><br><br>
+              <hr>
           </div>
         </div>
       </div>
       <!-- /About Section -->
 
       <!-- Exec Section -->
-      <div class="row exec">
-        <div class="col-md-8 offset-md-2">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
           <div class="section">
-            <h1>Directing Team</h1>
-            <p align="left">The wondeful people that run the show</p>
+              <h1>Exec Team</h1>
+              <p class="subtitle">Team for 2018</p>
 
-            <br><br>
+              <br>
 
-            <!-- Director / Producer -->
-            <div class="row">
-              <div class="col-md-6">
-                <div class="card">
-                  <img src="img/grey.jpg"><br>
-                  <h3>Henry Merton</h3>
-                  <p class="card-subtitle">Executive Director</p>
+              <div class="row"  style="line-height: 170%">
+                <div class="col-md-4" style="font-weight: 700;">
+                  Executive Director<br>
+                  Assistant Director<br>
+                  Producer<br>
+                  Assistant Producer<br>
+                  Plot Director<br>
+                  Skit Directors<br><br>
+                  A/V Director<br>
+                  Assistant A/V Director<br>
+                  Dance Director<br>
+                  Musical Directors<br><br>
+                  Marketing Manager<br>
+                  Makeup & Costume<br>
+                  Props Manager<br>
+                  Stage Manager<br>
+                  Backstage Manager<br>
+                  Puddle Manager<br>
+                  Lighting Technician<br>
+                  Sound Technician
+                </div>
+                <div class="col-md-4">
+                  Henry Merton<br>
+                  Alex Kennedy<br>
+                  Olivia Maxwell<br>
+                  Aorthi Afroza<br>
+                  Leah Rayman<br>
+                  Bridget Hall<br>
+                  Tanmay Mohini<br>
+                  Daniel Wong<br>
+                  Aaron Lamont<br>
+                  Victoria Kyle<br>
+                  Laurence de Burgh<br>
+                  Tom Hulland<br>
+                  Maggie Zhang<br>
+                  Tina Sherlock<br>
+                  I don't know<br>
+                  Leif Healy<br>
+                  Megan Bethell<br>
+                  Henry Scott MacDonald<br>
+                  Michael Kemp<br>
+                  Roman Amor<br>
                 </div>
               </div>
-              <div class="col-md-6">
-                <div class="card">
-                  <img src="img/grey.jpg"><br>
-                  <h3>Olivia Maxwell</h3>
-                  <p class="card-subtitle">Producer</p>
-                </div>
-              </div>
-            </div>
-            
-            <!-- Assistant Director / Assistant Producer -->
-            <div class="row">
-              <div class="col-md-6">
-                <div class="card">
-                  <img src="img/grey.jpg"><br>
-                  <h3>Alex Kennedy</h3>
-                  <p class="card-subtitle">Assistant Director</p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="card">
-                  <img src="img/grey.jpg"><br>
-                  <h3>Aorthi Afroza</h3>
-                  <p class="card-subtitle">Assistant Producer</p>
-                </div>
-              </div>
-            </div>
 
-            <!-- Skit Director / Skit Producer -->
-            <div class="row">
-              <div class="col-md-6">
-                <div class="card">
-                  <img src="img/grey.jpg"><br>
-                  <h3>Bridget Hall</h3>
-                  <p class="card-subtitle">Skit Director</p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="card">
-                  <img src="img/grey.jpg"><br>
-                  <h3>Tanmay Mohini</h3>
-                  <p class="card-subtitle">Skit Producer</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- A/V Director / Assistant A/V Producer -->
-            <div class="row">
-              <div class="col-md-6">
-                <div class="card">
-                  <img src="img/grey.jpg"><br>
-                  <h3>Daniel Wong</h3>
-                  <p class="card-subtitle">A/V Director</p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="card">
-                  <img src="img/grey.jpg"><br>
-                  <h3>Aaron Lamont</h3>
-                  <p class="card-subtitle">Assistant A/V Producer</p>
-                </div>
-              </div>
-            </div>
+              <br><br><br>
+              <hr>
           </div>
         </div>
       </div>
       <!-- /Exec Section -->
 
       <!-- Contact Section -->
-      <div class="row contact">
-        <div class="col-md-6 offset-md-1">
-          <h2>Engineering Revue</h2>
-          <p>Contact Us: <a href="mailto:engrevue@gmail.com?Subject=Website%20Contact">engrevue@gmail.com</a></p>
-          <br>
-          <h4>Social Links</h4>
-          <a href="https://www.facebook.com/EngineeringRevue/" class="fa fa-facebook"></a>
-          <a href="https://www.youtube.com/user/Engrevue" class="fa fa-youtube"></a>
-          <a href="https://www.snapchat.com/add/engrevue" class="fa fa-snapchat-ghost"></a>
-      </div>
-      <!-- /Contact Section -->
+      <div class="row">
+          <div class="col-md-6 offset-md-3">
+            <div class="section">
+                <h1>Contact Us</h1>
+                <p>Have some questions?</p>
+                <p>Email: <a href="mailto:engrevue@gmail.com?Subject=Website%20Contact">engrevue@gmail.com</a></p>
+                <br>
+                <a href="https://www.facebook.com/EngineeringRevue/" class="fa fa-facebook"></a>
+                <a href="https://www.youtube.com/user/Engrevue" class="fa fa-youtube"></a>
+                <a href="https://www.snapchat.com/add/engrevue" class="fa fa-snapchat-ghost"></a>
+            </div>
+          </div>
+        </div>
+        <!-- /Contact Section -->
     </div>
 
     <!-- Bootstrap core JavaScript
@@ -158,7 +165,6 @@
     <script>window.jQuery || document.write('<script src="js/jquery-3.3.1.min.js"><\/script>')</script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/custom.js"></script>
   </body>
 </html>
   

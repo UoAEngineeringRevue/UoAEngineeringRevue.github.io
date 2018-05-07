@@ -1,79 +1,31 @@
 body {
   background-color: white;
   font-family: 'Merriweather', serif;
-  overflow-x: hidden; /* Hack to hide horizontal scroll bars */
+  margin-top:  5rem;
+  min-width: 410px;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Open Sans', sans-serif;
 }
-h1 {
-  font-size: 3em;
-}
-.title-section {
-  height: 100vh;
-  width: 100vw;
-  background-color: #F44336;
-}
-.center-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 .title-text {
-  color: white;
-  text-align: center;
-}
-.title-text-size {
-  font-size: 60px;
-  white-space: nowrap;
-  overflow: hidden;
+  font-size: 5rem;
 }
 .subtitle-text {
-  color: #F5F5F5;
+  margin-left: 5px;
 }
-.subtitle-text-size {
-  font-size: 25px;
-}
-.glyph-size {
-  height: 40px;
-  width: auto;
-  transition: all .2s ease-in-out;
-}
-.glyph-size:hover {
-  transform: scale(1.4);
-}
-.glyph-position {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 40px;
-  margin-bottom: 20px;
+.subtitle {
+  margin-left: 3px;
 }
 .section {
-  padding: 50px;
-  padding-top: 100px;
+  padding-top: 4rem;
+  margin-bottom: 2rem;
 }
-.section.about {
-  height: 100vh;
+.section.top {
+  padding-top: 6rem;
 }
-.exec {
-  background-color: #BDBDBD;
-}
-.card {
-  padding: 30px;
-  margin-bottom: 30px;
-  background-color: white;
-  -webkit-box-shadow: 0px 0px 40px 3px rgba(0,0,0,0.3);
-  -moz-box-shadow: 0px 0px 40px 3px rgba(0,0,0,0.3);
-  box-shadow: 0px 0px 40px 3px rgba(0,0,0,0.3);
-}
-.card-subtitle {
-  font-size: 14px;
-}
-.contact {
-  padding: 5rem;
-  padding-bottom: 3rem;
+.images {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .fa {
   padding: 20px;
@@ -100,38 +52,11 @@ h1 {
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-
 @media only screen and (max-width: 550px) {
-  .title-text-size {
-    font-size: 35px;
-  }
-  .subtitle-text-size {
-    font-size: 20px;
-  }
-  .glyph-size {
-    height: 30px;
-    width: auto;
-    transition: all .2s ease-in-out;
-  }
-  .glyph-size:hover {
-    transform: scale(1.3);
-  }
-  .glyph-position {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 30px;
-    margin-bottom: 10px;
+  .title-text {
+    font-size: 4rem;
   }
   .section {
-    padding: 20px;
-    padding-top: 80px;
-  }
-  .section.about {
-    padding-top: 50px;
-  }
-  .contact {
-    padding: 3rem;
-    padding-bottom: 2rem;
+    padding-top: 2rem;
   }
 }
