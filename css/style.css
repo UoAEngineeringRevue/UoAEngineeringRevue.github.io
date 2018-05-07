@@ -23,6 +23,9 @@ h1, h2, h3, h4, h5, h6 {
 .section.top {
   padding-top: 6rem;
 }
+.section.contact {
+  margin-bottom: 5rem;
+}
 .images {
   margin-top: 2rem;
   margin-bottom: 2rem;
