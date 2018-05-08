@@ -1,0 +1,87 @@
+body {
+  background-color: white;
+  font-family: 'Lato', sans-serif;
+  margin-top: 3rem;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif;
+}
+h1 {
+    font-size: 3rem;
+}
+p {
+    font-size: 18px;
+}
+.title {
+    background-color: #BBDEFB;
+    padding: 20rem 0rem 20rem 0rem;
+}
+.title-text {
+  font-size: 5rem;
+}
+.subtitle-text {
+  margin-left: 5px;
+}
+.subtitle {
+  margin-left: 3px;
+}
+.section {
+  padding-top: 13rem;
+  margin-bottom: 8rem;
+}
+.section.bottom {
+  padding-top: 0rem;
+  margin-bottom: 5rem;
+}
+.left {
+  padding-left: 3rem;
+}
+.right {
+  padding-right: 3rem;
+}
+.left.about  {
+  padding-top: 7rem;
+}
+.image-fill {
+  width: 100%;
+  height: auto;
+}
+.fa {
+  padding: 20px;
+  margin-right: 10px;
+  font-size: 30px;
+  width: 55px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+@media only screen and (max-width: 550px) {
+  .title-text {
+    font-size: 4rem;
+  }
+  .section {
+    padding-top: 2rem;
+  }
+  .left {
+    padding-left: 1rem;
+  }
+  .right {
+    padding-right: 1rem;
+  }
+}
