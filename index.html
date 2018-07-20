@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="UoA Engineering Revue">
     <meta name="author" content="Daniel Wong">
-    <!-- <link rel="icon" href="../../../../favicon.ico"> -->
+    <link rel="icon" href="img/favicon.png">
 
     <title>Engineering Revue</title>
 
@@ -16,7 +16,7 @@
     <link href="css/index-style.css" rel="stylesheet">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans:700|Courgette" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -24,7 +24,10 @@
 
   <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="index.html">Engineering Revue</a>
+      <a class="navbar-brand" href="index.html">
+        <img src="img/navBarIcon.png" style="height: 32px;">
+        Engineering Revue
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -37,30 +40,92 @@
           <li class="nav-item">
             <a class="nav-link" href="previous/previous.html">Previous Revues</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://premier.ticketek.co.nz/shows/show.aspx?sh=ENGREVUE18">Buy Tickets</a>
+          </li>
         </ul>
       </div>
     </nav>
 
     <div class="container-fluid">
-      <div class="row title" id="home">
+      <!-- Banner Image -->
+      <div class="row">
+        <div class="col-md-12 pirates">
+          <img src="img/2018banner.png" class="image-fill pirate-center">
+          <div class="glyphPosition">
+              <center><img style="height: 30px; width: auto;" id="downarrow" src="img/downarrow.png"></center>
+          </div>
+        </div>
+      </div>
+
+      <!-- Show info -->
+      <div class="row pirates desc" id="pirates">
+        <div class="col-md-6 offset-md-3" style="margin-top: 100px">
+          <h2 class="pirate-text-color"> 7:30 pm, August 23rd - 25th<br>SKYCITY Theatre </h2>
+          <p class="pirate-font pirate-text-color" style="font-size: 21px;">
+              There are stories that tell of cursed students, doomed to forever roam the halls and corridors of the University of Auckland on 
+              a ship with overdue work reports for sails. It's said their captain is a man so evil that the Engineering building was demolished 
+              in an attempt to contain him. They say that they leave no survivors...
+              <br><br>But if there are no survivors, then where do the stories come from?
+          </p>
+          <br>
+          <iframe width="100%" height="420" src="https://www.youtube.com/embed/r1kPS_8j4wI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <br><br>
+          <p class="pirate-text-color" style="margin-bottom: 0px">
+              From the Engineering Revue, of course! The annual show written, directed, and performed entirely by students from the University of 
+              Auckland Faculty of Engineering! Back again in 2018 with a stunning lineup of hilarious skits, incredible dances, and 
+              inedible special effects*. 
+          </p>
+          <p class="pirate-text-color" style="text-align: right; font-size: 15px;">*Please do not attempt to eat the special effects</p>
+          <br>
+          <p class="pirate-text-color">
+            Come along to SKYCITY Theatre, located at 78 Victoria Street West, right next to the Sky Tower, from Thursday August 23rd to Saturday 
+            August 25th for a show you'll never forget.
+          </p>
+          <br>
+          <p class="pirate-text-color">The 2018 Engineering Revue is proudly sponsored by
+              <a style="color: rgb(255,180,0);" href="https://www.fphcare.com">Fisher & Paykel Healthcare</a>
+          </p>
+          <br><br>
+          <h2>
+            <a href="https://premier.ticketek.co.nz/shows/show.aspx?sh=ENGREVUE18" style="color: rgb(255,180,0);">
+            Click Here to Buy Tickets
+            </a>
+          </h2>
+          <br><br><br><br>
+          <br><br><br><br>
+        </div>
+      </div>
+
+      <!-- <div class="row title" id="home">
         <div class="col-md-6 offset-md-3">
           <h1 class="title-text">Engineering<br>Revue</h1>
           <p class="subtitle-text">The University of Auckland</p>
+        </div>
+      </div> -->
+
+      <!-- Black to White Gradient-->
+      <div class="row">
+        <div class="col-md-12" style="padding-left: 0px; padding-right: 0px;">
+            <div style="background: linear-gradient(black,white); padding: 200px; padding-left: 0px;">
+            </div>
         </div>
       </div>
 
       <!-- About Section -->
       <div class="row section">
-        <div class="col-md-5 left about">
+        <div class="col-md-6 offset-md-3">
           <h1>About Us</h1>
           <br>
           <p align="justify">
-            The Engineering Revue is a badass show put on by the University of Auckland Faculty of Engineering at the SkyCity Theatre. 
-            One of the hugely anticipated events of the year, the Revue is a combination of acting, comedy, dancing, singing, talents and much more.
+            The Engineering Revue is an awesome show put on by the University of Auckland Faculty of Engineering at SKYCITY Theatre. 
+            Established in 2008, the Revue is an annual event drawing on the collective talent of dozens of students, from bright-eyed 
+            first years to world-weary post-graduates. Every aspect of the show, from writing and performance, through choreography and costume, 
+            to lighting and sound, is done by students. Heck, last year some of us even made an elevator. It all comes together for a night 
+            (or three) of acting, comedy, dancing, singing, and much more!
           </p>
-        </div>
-        <div class="col-md-6 offset-md-1 right">
-            <img src="img/cast_2017.jpg" class="image-fill">
+          <br>
+          <img src="img/cast_2017.jpg" class="image-fill">
         </div>
       </div>
       <!-- /About Section -->
@@ -187,6 +252,7 @@
     <script>window.jQuery || document.write('<script src="js/jquery-3.3.1.min.js"><\/script>')</script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
   </body>
 </html>
   
