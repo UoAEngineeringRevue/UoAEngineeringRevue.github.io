@@ -105,7 +105,8 @@ p {
 
 .glyphPosition {
   position: absolute;
-  bottom: 0;
+  bottom: calc(100% - 95vh);
+  /* bottom: 0; */
   width: 100%;
   height: 50px;
   transition: all .2s ease-in-out;
