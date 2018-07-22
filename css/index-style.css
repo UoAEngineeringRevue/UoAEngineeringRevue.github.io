@@ -6,7 +6,7 @@ html, body {
 body {
   background-color: white;
   font-family: 'Lato', sans-serif;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Open Sans', sans-serif;
@@ -16,6 +16,12 @@ h1 {
 }
 p {
     font-size: 18px;
+}
+/* Vertical and horizontal center */
+.vh-center {
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
 }
 .title {
     padding: 20rem 0rem 20rem 0rem;
@@ -119,9 +125,6 @@ p {
   .left {
     padding-left: 1rem;
   }
-  .left.about  {
-    padding-top: 1rem;
-  }
   .right {
     padding-right: 1rem;
   }
@@ -142,9 +145,6 @@ p {
   }
   .left {
     padding-left: 1rem;
-  }
-  .left.about  {
-    padding-top: 2rem;
   }
   .right {
     padding-right: 1rem;
