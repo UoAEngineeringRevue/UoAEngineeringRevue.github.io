@@ -3,92 +3,66 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="UoA Engineering Revue">
-    <meta name="author" content="Michael Kemp">
-    <!--Style stolen from Daniel Wong-->
+    <meta name="description" content="">
+    <meta name="author" content="Daniel Wong">
     <!-- <link rel="icon" href="../../../../favicon.ico"> -->
 
-    <title>Engineering Revue</title>
+    <title>UoA Engineering Revue</title>
 
-    <!-- Bootstrap core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
     <link href="../css/style.css" rel="stylesheet">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab:300:600" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="../index.html">
-        <img src="../img/navBarIcon.png" style="height: 32px;">
-        Engineering Revue
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="previous.html">Previous Revues</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://premier.ticketek.co.nz/shows/show.aspx?sh=ENGREVUE18">Buy Tickets</a>
-          </li>
+    <div id="navbar-placeholder"></div>
+    <section class="row section">
+      <article class="col-md-3 offset-md-1">
+          <img class="image-fill" src="../img/previous/2018.jpg" alt="2018 Poster">
+      </article>
+      <article class="col-md-5 offset-md-1">
+        <h1>Pirates of the Curriculum</h1>
+        <p>Engineering Revue 2018</p>
+        <p class="justify">
+            When a mysterious kidnapping interrupts her very first lecture, budding engineer Billie must team up 
+            with the unlikeliest of allies, the suspicious Zach Sparrow, to rescue her friends, and the faculty. 
+            Can they overcome their differences to fight dark curses, deranged academics and dizzyingly-handsome 
+            pirates before it’s too late? Since it’s a comedy, yeah, probably – but you’ll have to see the show to know for sure!
+        </p>
+        <blockquote class="blockquote">
+          <p class="mb-0">Outstanding show</p>
+          <footer class="blockquote-footer"><cite title="Source Title">David Seymour</cite> (Dancing with the Stars 2018 Finalist)</footer>
+        </blockquote>
+        <br />
+        <img class="image-fill img-thumbnail" src="../img/previous/2018/cast_2018.jpg" alt="2018 Cast">
+        <br /><br /><br />
+        <h3>Resources</h3>
+        <ul>
+          <li>Programme - <a href="../img/previous/2018/programme.pdf">link</a></li>
+          <li>Act One - <i>coming soon</i></li>
+          <li>Act Two - <i>coming soon</i></li>
         </ul>
-      </div>
-    </nav>
-
-    <div class="container-fluid">
-      <div class="row" id="home">
-        <div class="col-md-3 offset-md-1 section">
-          <img src="../img/2018.png" class="image-fill">
-        </div>
-        <div class="col-md-5 offset-md-1 section bottom">
-          <h1 class="title-text">Pirates of the<br>Curriculum</h1>
-          <p>Engineering Revue 2018</p>
-          <br>
-          <p align="justify">
-            When a mysterious kidnapping interrupts her very first lecture, budding engineer Billie
-            must team up with the unlikeliest of allies, the suspicious Zach Sparrow, to rescue her
-            friends, and the faculty. Can they overcome their differences to fight dark curses,
-            deranged academics and dizzyingly-handsome pirates before it’s too late? Since it’s a
-            comedy, yeah, probably – but you’ll have to see the show to know for sure!
-          </p>
-          <br>
-          <p>
-            <i>"Outstanding show" - David Seymour</i>
-          </p>
-          <br>
-          <img src="../img/cast_2018.jpg" class="img-thumbnail image-fill">
-          <!--<br><br><br>-->
-          <!--Needs the whole show to be uploaded to YouTube-->
-          <!--<h2>Full Show</h2>-->
-          <!--<br>-->
-          <!--<h5>Act One</h5>-->
-          <!--<div class="videoWrapper">-->
-            <!--<iframe width="640" height="360" src="https://www.youtube.com/embed/R3yaxy1Lpks" frameborder="0" allowfullscreen></iframe>-->
-          <!--</div>-->
-          <!--<br>-->
-          <!--<h5>Act Two</h5>-->
-          <!--<div class="videoWrapper">-->
-            <!--<iframe width="640" height="360" src="https://www.youtube.com/embed/FH-Tp6JjIGI" frameborder="0" allowfullscreen></iframe>-->
-          <!--</div>-->
-      </div>
-    </div>
+      </article>
+    </section>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../js/jquery-3.3.1.min.js"><\/script>')</script>
     <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+
+    <script>
+      //Loads the navbar dynamically
+      $(function(){
+        $("#navbar-placeholder").load("../navbar.html");
+      });
+    </script>
   </body>
 </html>

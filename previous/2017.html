@@ -3,86 +3,62 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="UoA Engineering Revue">
+    <meta name="description" content="">
     <meta name="author" content="Daniel Wong">
     <!-- <link rel="icon" href="../../../../favicon.ico"> -->
 
-    <title>Engineering Revue</title>
+    <title>UoA Engineering Revue</title>
 
-    <!-- Bootstrap core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
     <link href="../css/style.css" rel="stylesheet">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab:300:600" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="../index.html">
-        <img src="../img/navBarIcon.png" style="height: 32px;">
-        Engineering Revue
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="previous.html">Previous Revues</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://premier.ticketek.co.nz/shows/show.aspx?sh=ENGREVUE18">Buy Tickets</a>
-          </li>
+    <div id="navbar-placeholder"></div>
+    <section class="row section">
+      <article class="col-md-3 offset-md-1">
+          <img class="image-fill" src="../img/previous/2017.jpg" alt="2017 Poster">
+      </article>
+      <article class="col-md-5 offset-md-1">
+        <h1>21 Symonds Street</h1>
+        <p>Engineering Revue 2017</p>
+        <p class="justify">
+          When a mysterious villain threatens the students of the Engineering department, 
+          21 Symonds Street is put on the case. Top agent James Brond must team up with bumbling 
+          techie Max Well to save the University from imminent disaster. Can they learn to work together 
+          before it’s too late? Since it’s a comedy, yeah, probably – but you’ll have to see the show to know for sure!
+        </p>
+        <br />
+        <img class="image-fill img-thumbnail" src="../img/previous/2017/cast_2017.jpg" alt="2017 Cast">
+        <br /><br /><br />
+        <h3>Resources</h3>
+        <ul>
+          <li>Programme - <a href="../img/previous/2017/programme.pdf">link</a></li>
+          <li>Act One - <a href="https://www.youtube.com/watch?v=R3yaxy1Lpks">link</a></li>
+          <li>Act Two - <a href="https://www.youtube.com/watch?v=FH-Tp6JjIGI">link</a></li>
         </ul>
-      </div>
-    </nav>
-
-    <div class="container-fluid">
-      <div class="row" id="home">
-        <div class="col-md-3 offset-md-1 section">
-          <img src="../img/2017.jpg" class="image-fill">
-        </div>
-        <div class="col-md-5 offset-md-1 section bottom">
-          <h1 class="title-text">21 Symonds<br>Street</h1>
-          <p>Engineering Revue 2017</p>
-          <br>
-          <p align="justify">
-            When a mysterious villain threatens the students of the Engineering department, 
-            21 Symonds Street is put on the case. Top agent James Brond must team up with bumbling 
-            techie Max Well to save the University from imminent disaster. Can they learn to work together 
-            before it’s too late? Since it’s a comedy, yeah, probably – but you’ll have to see the show to know for sure!
-          </p>
-          <br>
-          <img src="../img/cast_2017.jpg" class="img-thumbnail image-fill">
-          <br><br><br>
-          <h2>Full Show</h2>
-          <br>
-          <h5>Act One</h5>
-          <div class="videoWrapper">
-            <iframe width="640" height="360" src="https://www.youtube.com/embed/R3yaxy1Lpks" frameborder="0" allowfullscreen></iframe>
-          </div>
-          <br>
-          <h5>Act Two</h5>
-          <div class="videoWrapper">
-            <iframe width="640" height="360" src="https://www.youtube.com/embed/FH-Tp6JjIGI" frameborder="0" allowfullscreen></iframe>
-          </div>
-      </div>
-    </div>
+      </article>
+    </section>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../js/jquery-3.3.1.min.js"><\/script>')</script>
     <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+
+    <script>
+      //Loads the navbar dynamically
+      $(function(){
+        $("#navbar-placeholder").load("../navbar.html");
+      });
+    </script>
   </body>
 </html>
-  
