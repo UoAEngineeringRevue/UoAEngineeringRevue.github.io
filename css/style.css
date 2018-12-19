@@ -33,6 +33,7 @@ h2 {
 .image-fill {
   width: 100%;
   height: auto;
+  padding-bottom: 2rem;
 }
 .background-grey {
   background-color: #333;
