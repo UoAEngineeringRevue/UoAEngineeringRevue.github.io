@@ -35,6 +35,54 @@ h2 {
   height: auto;
   padding-bottom: 2rem;
 }
+
+.loans {
+  background: #181513;
+  height: 95vh;
+  color: rgb(255, 175, 109);
+}
+.loans-center {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+}
+.loans.banner {
+  padding: 0;
+}
+.loans.desc {
+  height: auto;
+  padding-top: 0px;
+  padding-bottom: 5em;
+}
+.flavourtext {
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  font-style: italic;
+  font-size: 1.3rem;
+}
+.infotext {
+  margin: 3em auto;
+}
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+  color: black !important;
+  background-color: #FFAF6D !important;
+  border-color: #FFAF6D !important;
+}
+.glyphPosition {
+  position: absolute;
+  text-align: center;
+  bottom: 20px;
+  width: 100%;
+  height: 50px;
+  transition: all .2s ease-in-out;
+}
+.glyphPosition:hover {
+  transform: scale(1.5);
+}
+
 .background-grey {
   background-color: #333;
 }
@@ -57,6 +105,10 @@ h2 {
   background: #3B5998;
   color: white;
 }
+.fa-instagram {
+  background: #2E5E86;
+  color: white;
+}
 .fa-youtube {
   background: #bb0000;
   color: white;
@@ -65,4 +117,7 @@ h2 {
   background: #fffc00;
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+a.fa:hover {
+  color: white;
 }

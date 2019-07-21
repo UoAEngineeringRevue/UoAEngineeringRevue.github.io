@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Daniel Wong">
-    <!-- <link rel="icon" href="../../../../favicon.ico"> -->
+    <link rel="icon" href="img/favicon.png">
 
     <title>UoA Engineering Revue</title>
 
@@ -21,12 +21,62 @@
 
   <body>
     <div id="navbar-placeholder"></div>
+
+    <section class="row">
+      <div class="col-md-12 banner loans">
+        <picture>
+          <source media="(max-width: 767px)" srcset="img/index/2019-banner-square.jpg">
+          <source media="(min-width: 768px)" srcset="img/index/2019-banner-long.jpg">
+          <img src="img/index/2019-banner-long.jpg" class="image-fill loans-center">
+        </picture>
+        <div class="glyphPosition">
+          <img style="height: 30px; width: auto;" id="downarrow" src="img/index/downarrow.png">
+        </div>
+      </div>
+    </section>
+
+    <section class="row loans desc section" id="loans">
+      <div class="col-md-6 offset-md-3" style="margin-top: 100px">
+
+        <div class="flavourtext">
+          <p style="font-size: 3rem; line-height: 3.4rem;">When you play the Game of Loans, you win, or you default.</p>
+          <p><i>
+            When a sudden loss sends the student kingdom into disarray, the scramble for power begins,
+            and an undead threat emerges from the shadows. One thing’s for certain; the race for the
+            Iron Loan is a matter of life and debt.
+          </i></p>
+        </div>
+
+        <div class="infotext">
+            <h2>7.30pm, August 29th - 31st<br>SKYCITY Theatre</h2>
+            <p>
+              The annual Fisher & Paykel Healthcare Auckland Engineering Revue (otherwise
+              known as Auckland’s only show entirely created and performed by Engineering Students) has gone
+              from mocking beloved cinema to mocking prestige television.
+              <br><br>
+              As always, the show ranges from brilliant one-off comedy sketches and fantastic dance numbers
+              to our brilliant jazz band and comedy short films! Whatever you’re looking for, we have it and
+              you’re gonna want to see it!
+              <br><br>
+              The 2019 Engineering Revue is proudly sponsored by <a href="https://www.fphcare.com" style="color: #FFAF6D;">Fisher & Paykel Healthcare</a>.
+            </p>
+        </div>
+
+        <a href="https://premier.ticketek.co.nz/shows/show.aspx?sh=ENGREVUE19" class="btn btn-lg btn-block btn-primary" role="button">
+          Buy Tickets to GAME OF LOANS
+        </a>
+
+      </div>
+    </section>
+
+    <!--
     <section class="row title background-grey">
       <article class="col-md-6 offset-md-2">
         <h1>UoA Engineering Revue</h1>
         <p style="max-width: 500px">A theatre show put on every year by Engineering Students at the University of Auckland</p>
       </article>
     </section>
+    -->
 
     <section class="row section">
       <article class="col-md-6 offset-md-3">
@@ -36,7 +86,7 @@
           at SKYCITY Theatre. Established in 2008, the Revue is an annual event drawing on the collective talent 
           of dozens of students, from bright-eyed first years to world-weary post-graduates. Every aspect of the show, 
           from writing and performance, through choreography and costume, to lighting and sound, is done by students. 
-          Heck, last year some of us even made an elevator, and this year we made a pirate ship! It all comes together 
+          Heck, in the past we've even made an elevator, and last year we made a pirate ship! It all comes together 
           for a night (or three) of acting, comedy, dancing, singing, and much more!
         </p>
         <br />
@@ -53,6 +103,7 @@
         </p>
         <br>
         <a href="https://www.facebook.com/EngineeringRevue/" class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com/engrevue" class="fa fa-instagram"></a>
         <a href="https://www.youtube.com/user/Engrevue" class="fa fa-youtube"></a>
         <a href="https://www.snapchat.com/add/engrevue" class="fa fa-snapchat-ghost"></a>
       </article>
@@ -65,6 +116,7 @@
     <script>window.jQuery || document.write('<script src="js/jquery-3.3.1.min.js"><\/script>')</script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
 
     <script>
       //Loads the navbar dynamically
