@@ -1,3 +1,4 @@
+/*
 $( document ).ready(function() {
     $("#downarrow").click(function() {
         $('html, body').animate({
@@ -16,3 +17,4 @@ $(window).scroll(function() {
         hidden = false;
     }
 });
+*/
