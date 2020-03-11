@@ -1,5 +1,7 @@
 # Engineering Revue Website
 
+**NOTE: As of 11 March 2020, this version of the website has been deprecated. To see the current website, please visit the [engrevue-website repo](https://github.com/UoAEngineeringRevue/engrevue-website).**
+
 ## Notes
 * Website uses the Bootstrap framework
 * To deploy changes, push your changes to the master branch and GitHub pages will build the site automatically
